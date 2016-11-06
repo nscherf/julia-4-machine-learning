@@ -48,4 +48,4 @@ t = nnet(nin, nout, nh, :softplus, :softmax)
 obj = objective(t, ElasticNetPenalty(1e-5))
 
 pidx = 1:2:length(t)
-pvalplts = [TracePlor(length(params(t[i])), title="$(t[i])") for i=pidx]
+pvalplts = [TracePlot(length(params(t[i])), title="$(t[i])") for i=pidx]
