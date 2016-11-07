@@ -3,6 +3,7 @@ using MLDataUtils
 using StatsBase
 using StatPlots
 import MNIST
+using StochasticOptimization
 
 ENV["GKS_WSTYPE"] = "x11"
 gr(leg=false, linealpha = 0.5)
